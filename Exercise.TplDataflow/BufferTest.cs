@@ -30,7 +30,7 @@ namespace Exercise.TplDataflow
         [TestMethod]
         public async Task Produce_Consumer()
         {
-            var block = new BufferBlock<int>();
+            var block = new BufferBlock<int>(new DataflowBlockOptions { BoundedCapacity = 1 });
 
             var action1 = new ActionBlock<int>(a =>
             {
@@ -49,7 +49,8 @@ namespace Exercise.TplDataflow
 
             for (int i = 0; i < 10; i++)
             {
-                block.Post(i);
+                await block.SendAsync(i);
+                //block.Post(i);
             }
 
             block.Complete();
