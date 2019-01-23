@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace Exercise.TplDataflow
 {
     [TestClass]
-    public class UnitTest1
+    public class ActionTest
     {
         [TestMethod]
         public void TestMethod1()
