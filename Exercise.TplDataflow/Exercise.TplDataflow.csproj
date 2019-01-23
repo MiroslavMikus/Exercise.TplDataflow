@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ActionTest.cs" />
+    <Compile Include="BatchedJoinTest.cs" />
     <Compile Include="BatchTest.cs" />
     <Compile Include="BroadcastTest.cs" />
     <Compile Include="BufferTest.cs" />
