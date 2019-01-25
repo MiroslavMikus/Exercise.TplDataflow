@@ -47,6 +47,7 @@
     <Compile Include="BatchTest.cs" />
     <Compile Include="BroadcastTest.cs" />
     <Compile Include="BufferTest.cs" />
+    <Compile Include="EncapsulateBlock.cs" />
     <Compile Include="ErrorHandlingTest.cs" />
     <Compile Include="JoinTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
