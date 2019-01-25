@@ -50,7 +50,6 @@ namespace Exercise.TplDataflow
             for (int i = 0; i < 10; i++)
             {
                 await block.SendAsync(i);
-                //block.Post(i);
             }
 
             block.Complete();
